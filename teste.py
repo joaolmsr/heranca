@@ -23,9 +23,9 @@ programador.ScheduleMeeting()
 
 # Estagiário batendo ponto, recebendo salário e indo almoçar
 estagiario.BaterPonto()
-estagiario.ReceberSalario()
+estagiario.ReceiveSalary()
 estagiario.almocar()
 
 # Atendente batendo ponto e recebendo salário
 atendente.BaterPonto()
-atendente.ReceberSalario()
+atendente.ReceiveSalary()
