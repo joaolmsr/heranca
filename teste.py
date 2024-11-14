@@ -22,10 +22,10 @@ gerente.Dismiss(atendente)
 programador.ScheduleMeeting()
 
 # Estagiário batendo ponto, recebendo salário e indo almoçar
-estagiario.BaterPonto()
+estagiario.Presence()
 estagiario.ReceiveSalary()
-estagiario.almocar()
+estagiario.HaveLunch()
 
 # Atendente batendo ponto e recebendo salário
-atendente.BaterPonto()
+atendente.Presence()
 atendente.ReceiveSalary()
