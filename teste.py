@@ -15,8 +15,8 @@ atendente = Attendant(nome="Maria Oliveira", cpf="654.321.987-00", email="maria.
 # Testando os métodos
 
 # Gerente contratando e demitindo
-gerente.Contratar(programador)
-gerente.Demitir(atendente)
+gerente.Hire(programador)
+gerente.Dismiss(atendente)
 
 # Programador marcando reunião
 programador.MarcarReuniao()
