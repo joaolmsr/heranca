@@ -1,56 +1,45 @@
 from datetime import datetime
 
-class Funcionario:
-  def __init__(self, nome:str, cpf:str, email:str, telefone: str, salario:float) -> None:
-    self.nome = nome
+class Employee:
+  def __init__(self, name:str, cpf:str, email:str, number: str, salary:float) -> None:
+    self.name = name
     self.cpf = cpf
     self.email = email
-    self.telefone = telefone
-    self.salario = salario
+    self.number = number
+    self.salary = salary
 
-  def BaterPonto(self):
-      agora = datetime.now()
-      print(f'o funcionário {self.nome} bateu o ponto às {agora.hour}:{agora.minute}')
-  def ReceberSalario(self):
-      print(f'o funcionário {self.nome}, foi pago ({self.salario})')
-  def almocar(self):
-      print(f'{self.nome} está de bucho cheio')
+  def Presence(self):
+      now = datetime.now()
+      print(f'o funcionário {self.name} bateu o ponto às {now.hour}:{now.minute}')
+  def ReceiveSalary(self):
+      print(f'o funcionário {self.name}, foi pago ({self.salary})')
+  def HaveLunch(self):
+      print(f'{self.name} está de bucho cheio')
 
-class Gerente(Funcionario):
-  def __init__(self, nome: str, cpf: str, email: str, telefone: str, salario: float) -> None:
-    super().__init__(nome, cpf, email, telefone, salario)
+class Manager(Employee):
+  def __init__(self, name: str, cpf: str, email: str, number: str, salary: float) -> None:
+    super().__init__(name, cpf, email, number, salary)
 
-  def Contratar(self, funcionario):
-    print(f'{self.nome} contratou o funcionário {funcionario.nome}')
+  def Contratar(self, employee):
+    print(f'{self.name} contratou o funcionário {employee.name}')
 
-  def Demitir(self, funcionario):
-    print(f'{self.nome} demitiu o funcionário {funcionario.nome}')
+  def Demitir(self, employee):
+    print(f'{self.name} demitiu o funcionário {employee.name}')
   
-class GarotoDePrograma(Funcionario):
-  def __init__(self, nome: str, cpf: str, email: str, telefone: str, salario: float, stack: str, linguagem_dominio: str) -> None:
-    super().__init__(nome, cpf, email, telefone, salario)
+class Programmer(Employee):
+  def __init__(self, name: str, cpf: str, email: str, number: str, wage: float, stack: str, domain_language: str) -> None:
+    super().__init__(name, cpf, email, number, wage)
     self.stack = stack
-    self.linguagem_dominio = linguagem_dominio
+    self.domain_language = domain_language
 
-  def MarcarReuniao(self):
-    print(f'{self.nome} está com uma reunião marcada')
+  def ScheduleMeeting(self, day: int, hour:int):
+    print(f'{self.name} está com uma reunião marcada para o dia {day}, às {hour} horas')
 
-class Estagiario(Funcionario):
-  def __init__(self, nome: str, cpf: str, email: str, telefone: str, salario: float, carga_horaria: str) -> None:
-    super().__init__(nome, cpf, email, telefone, salario)
-    self.carga_horaria = carga_horaria
+class Trainee(Employee):
+  def __init__(self, name: str, cpf: str, email: str, number: str, wage: float, workload: str) -> None:
+    super().__init__(name, cpf, email, number, wage)
+    self.workload = workload
 
-class Atendente(Funcionario):
-  def __init__(self, nome: str, cpf: str, email: str, telefone: str, salario: float) -> None:
-    super().__init__(nome, cpf, email, telefone, salario)
-
-
-
-
-
-
-
-
-
-
-
+class Attendant(Employee):
+  def __init__(self, name: str, cpf: str, email: str, number: str, wage: float) -> None:
+    super().__init__(name, cpf, email, number, wage)
