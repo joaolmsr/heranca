@@ -1,16 +1,16 @@
 from main import *
 
 
-gerente = Gerente(nome="Ana Silva", cpf="123.456.789-00", email="ana.silva@empresa.com", telefone="11987654321", salario=8000)
+gerente = Manager(nome="Ana Silva", cpf="123.456.789-00", email="ana.silva@empresa.com", telefone="11987654321", salario=8000)
 
 # Programador
-programador = GarotoDePrograma(nome="Carlos Souza", cpf="987.654.321-00", email="carlos.souza@empresa.com", telefone="11912345678", salario=5000, stack="Backend", linguagem_dominio="Python")
+programador = Programmer(nome="Carlos Souza", cpf="987.654.321-00", email="carlos.souza@empresa.com", telefone="11912345678", salario=5000, stack="Backend", linguagem_dominio="Python")
 
 # Estagiário
-estagiario = Estagiario(nome="João Santos", cpf="321.654.987-00", email="joao.santos@empresa.com", telefone="11923456789", salario=1500, carga_horaria="6 horas")
+estagiario = Trainee(nome="João Santos", cpf="321.654.987-00", email="joao.santos@empresa.com", telefone="11923456789", salario=1500, carga_horaria="6 horas")
 
 # Atendente
-atendente = Atendente(nome="Maria Oliveira", cpf="654.321.987-00", email="maria.oliveira@empresa.com", telefone="11934567890", salario=2500)
+atendente = Attendant(nome="Maria Oliveira", cpf="654.321.987-00", email="maria.oliveira@empresa.com", telefone="11934567890", salario=2500)
 
 # Testando os métodos
 
