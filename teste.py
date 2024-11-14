@@ -19,7 +19,7 @@ gerente.Hire(programador)
 gerente.Dismiss(atendente)
 
 # Programador marcando reunião
-programador.MarcarReuniao()
+programador.ScheduleMeeting()
 
 # Estagiário batendo ponto, recebendo salário e indo almoçar
 estagiario.BaterPonto()
