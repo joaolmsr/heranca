@@ -23,7 +23,7 @@ class Manager(Employee):
   def Hire(self, employee):
     print(f'{self.name} contratou o funcionário {employee.name}')
 
-  def Dimiss(self, employee):
+  def Dismiss(self, employee):
     print(f'{self.name} demitiu o funcionário {employee.name}')
   
 class Programmer(Employee):
