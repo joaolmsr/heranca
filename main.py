@@ -20,10 +20,10 @@ class Manager(Employee):
   def __init__(self, name: str, cpf: str, email: str, number: str, salary: float) -> None:
     super().__init__(name, cpf, email, number, salary)
 
-  def Contratar(self, employee):
+  def Hire(self, employee):
     print(f'{self.name} contratou o funcionário {employee.name}')
 
-  def Demitir(self, employee):
+  def Dimiss(self, employee):
     print(f'{self.name} demitiu o funcionário {employee.name}')
   
 class Programmer(Employee):
